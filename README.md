@@ -41,7 +41,7 @@ If your web page uses a lot of images that aren't visible initially (e.g., on ho
 ```javascript
 $.preloadImages = function () {
   for (var i = 0; i < arguments.length; i++) {
-    $('img').attr('src', arguments[i]);
+    $('<img>').attr('src', arguments[i]);
   }
 };
 
